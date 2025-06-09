@@ -70,7 +70,7 @@ weechat.controller('WeechatCtrl', ['$rootScope', '$scope', '$store', '$timeout',
         'useFavico': true,
         'soundnotification': true,
         'fontsize': '14px',
-        'fontfamily': (utils.isMobileUi() ? 'sans-serif' : 'Inconsolata, Consolas, Monaco, Ubuntu Mono, monospace'),
+        'fontfamily': (utils.isMobileUi() ? 'sans-serif' : ''),
         'readlineBindings': false,
         'enableMathjax': false,
         'enableQuickKeys': true,
@@ -333,7 +333,7 @@ weechat.controller('WeechatCtrl', ['$rootScope', '$scope', '$store', '$timeout',
         if (utils.isMobileUi()) {
             settings.fontfamily = 'sans-serif';
         } else {
-            settings.fontfamily = "Inconsolata, Consolas, Monaco, Ubuntu Mono, monospace";
+            settings.fontfamily = "";
         }
     }
 
