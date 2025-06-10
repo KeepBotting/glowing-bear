@@ -21,6 +21,7 @@ module.exports = {
         static: {
             directory: path.resolve(__dirname, 'build')
         },
+        port: 18888,
     },
     devtool: 'source-map',
     plugins: [
